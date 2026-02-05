@@ -4,3 +4,6 @@ app.get('/', (req, res) => {
 res.send('Welcome to the App');
 });
 module.exports = app;
+app.get('/api/users', (req, res) => {
+res.json({ users: [] });
+});
